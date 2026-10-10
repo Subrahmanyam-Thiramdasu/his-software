@@ -1,0 +1,64 @@
+/* Variables and Design Tokens */
+:root {
+  /* Colors */
+  --color-primary: #071C3D;
+  --color-secondary: #102C54;
+  --color-brand-blue: #087CFF;
+  --color-electric-blue: #168BFF;
+  --color-healthcare-teal: #00B7B3;
+  --color-soft-blue: #EAF5FF;
+  --color-bg-offwhite: #F8FBFF;
+  --color-white: #FFFFFF;
+  --color-text-primary: #10213A;
+  --color-text-secondary: #61738B;
+  --color-border: #DFEAF5;
+  
+  /* Accents */
+  --color-accent-teal: #00B7B3;
+  --color-accent-indigo: #4A56E2;
+  --color-accent-orange: #FF7E4B;
+  --color-accent-rose: #FF6B8B;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--color-primary), var(--color-brand-blue));
+  --gradient-button: linear-gradient(to right, var(--color-primary), var(--color-brand-blue));
+  --gradient-soft: linear-gradient(180deg, var(--color-white) 0%, var(--color-soft-blue) 100%);
+  --gradient-dark: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  
+  /* Typography */
+  --font-heading: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(7, 28, 61, 0.04);
+  --shadow-md: 0 8px 24px rgba(7, 28, 61, 0.08);
+  --shadow-lg: 0 20px 40px rgba(7, 28, 61, 0.12);
+  --shadow-hover: 0 30px 60px rgba(7, 28, 61, 0.15);
+  
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+  
+  /* Spacing */
+  --spacing-1: 8px;
+  --spacing-2: 16px;
+  --spacing-3: 24px;
+  --spacing-4: 32px;
+  --spacing-5: 48px;
+  --spacing-6: 64px;
+  --spacing-8: 96px;
+  --spacing-10: 128px;
+  
+  /* Layout */
+  --container-width: 1440px;
+  --container-padding: 24px;
+  --header-height: 78px;
+  
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}

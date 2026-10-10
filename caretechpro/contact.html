@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | CareTechPro</title>
+  <meta name="description" content="Complete digital solutions for healthcare businesses. Hospital management software and beautifully designed healthcare websites.">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+<header id="header">
+    <div class="container nav-container">
+      <div class="logo-container">
+        <div class="logo">
+          <i data-lucide="cross" class="logo-icon"></i>
+          CareTechPro
+        </div>
+        <div class="tagline hidden-mobile">Digital Solutions for Better Healthcare</div>
+      </div>
+      
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="solutions.html#his" class="nav-link">HIS Software</a>
+        <a href="solutions.html#websites" class="nav-link">Healthcare Websites</a>
+        <a href="solutions.html" class="nav-link">Solutions</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      
+      <a href="#demo" class="btn btn-primary btn-sm">Book a Demo</a>
+    </div>
+  </header>
+<main>
+
+  <!-- Hero -->
+  <section class="hero hero-inner bg-light" style="padding-bottom: 60px; text-align: center; background: radial-gradient(circle at 50% 50%, rgba(234, 245, 255, 0.8) 0%, transparent 80%);">
+    <div class="container">
+      <div class="eyebrow mb-4 mx-auto" style="display:inline-flex;">CONTACT US</div>
+      <h1 class="mb-4" style="max-width: 900px; margin-left: auto; margin-right: auto;">Let's Build Something Better <br><span class="text-blue">for Healthcare</span></h1>
+    </div>
+  </section>
+
+  <!-- Contact Form & Info -->
+  <section class="contact-section bg-white" style="padding: 100px 0;">
+    <div class="container grid grid-cols-2 gap-6">
+      
+      <!-- Info Left -->
+      <div style="padding-right: 40px;">
+        <h2 class="mb-4">Get in touch with our team</h2>
+        <p class="text-lg mb-6 opacity-80">Whether you want to request a demo, get a custom quote, or need technical support, our team is ready to help.</p>
+        
+        <div style="display: flex; flex-direction: column; gap: 32px; margin-top: 48px;">
+          <div style="display: flex; gap: 24px;">
+            <div style="width: 56px; height: 56px; background: #eaf5ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--color-brand-blue); flex-shrink: 0;">
+               <i data-lucide="phone"></i>
+            </div>
+            <div>
+              <h4 class="mb-1">Sales & Consultation</h4>
+              <p class="mb-1 opacity-80">Call us directly to speak with a healthcare IT specialist.</p>
+              <a href="tel:+15551234567" style="font-weight: 600; color: var(--color-primary);">+1 (555) 123-4567</a>
+            </div>
+          </div>
+          
+          <div style="display: flex; gap: 24px;">
+            <div style="width: 56px; height: 56px; background: #eaf5ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--color-brand-blue); flex-shrink: 0;">
+               <i data-lucide="mail"></i>
+            </div>
+            <div>
+              <h4 class="mb-1">Email Enquiries</h4>
+              <p class="mb-1 opacity-80">For detailed RFPs and business proposals.</p>
+              <a href="mailto:sales@caretechpro.com" style="font-weight: 600; color: var(--color-primary);">sales@caretechpro.com</a>
+            </div>
+          </div>
+          
+          <div style="display: flex; gap: 24px;">
+            <div style="width: 56px; height: 56px; background: #eaf5ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--color-brand-blue); flex-shrink: 0;">
+               <i data-lucide="map-pin"></i>
+            </div>
+            <div>
+              <h4 class="mb-1">Headquarters</h4>
+              <p class="mb-1 opacity-80">123 Health Tech Blvd, Suite 100<br>New York, NY 10001, USA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Form Right -->
+      <div style="background: white; padding: 48px; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.08); border: 1px solid #eee;">
+        <h3 class="mb-4 text-center">Send a Message</h3>
+        <form id="contactPageForm" onsubmit="handleContactSubmit(event)">
+          <div class="grid grid-cols-2 gap-3">
+            <div class="form-group">
+              <label class="form-label">Full Name*</label>
+              <input type="text" class="form-control" required placeholder="Dr. Jane Smith">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone Number*</label>
+              <input type="tel" class="form-control" required placeholder="+1 234 567 890">
+            </div>
+          </div>
+          
+          <div class="grid grid-cols-2 gap-3">
+            <div class="form-group">
+              <label class="form-label">Email Address*</label>
+              <input type="email" class="form-control" required placeholder="jane@hospital.com">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Hospital / Organization*</label>
+              <input type="text" class="form-control" required placeholder="City General Hospital">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label">Interested Solution*</label>
+            <select class="form-control" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="his">HIS Software</option>
+              <option value="clinic">Clinic Management Software</option>
+              <option value="lab">Laboratory Software</option>
+              <option value="pharmacy">Pharmacy Software</option>
+              <option value="website">Healthcare Website Development</option>
+              <option value="other">Other Enquiry</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label">Message (Optional)</label>
+            <textarea class="form-control" rows="4" placeholder="Tell us a bit about your requirements..."></textarea>
+          </div>
+          
+          <div class="form-group mt-4">
+            <button type="submit" id="contactSubmitBtn" class="btn btn-primary" style="width: 100%;">Submit Request <i data-lucide="send" class="btn-icon"></i></button>
+          </div>
+          <div id="contactFormStatus" style="margin-top: 16px; text-align: center; font-weight: 500; display: none;"></div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+<footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="logo footer-logo">
+            <i data-lucide="cross" class="logo-icon"></i>
+            CareTechPro
+          </div>
+          <p class="mb-4" style="max-width: 300px;">Complete digital solutions for healthcare businesses. Hospital management software and premium websites.</p>
+          <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Company</h4>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#careers">Careers</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Solutions</h4>
+          <div class="footer-links">
+            <a href="#his">HIS Software</a>
+            <a href="#clinic">Clinic Management</a>
+            <a href="#lab">Laboratory Software</a>
+            <a href="#pharmacy">Pharmacy Software</a>
+            <a href="#websites">Healthcare Websites</a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-links">
+            <p><i data-lucide="mail" size="16" class="inline"></i> info@caretechpro.com</p>
+            <p><i data-lucide="phone" size="16" class="inline"></i> +1 (555) 123-4567</p>
+            <p><i data-lucide="map-pin" size="16" class="inline"></i> 123 Health Tech Blvd, Suite 100<br>New York, NY 10001</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 CareTechPro. All rights reserved.</p>
+        <div style="display: flex; gap: 16px;">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+
+<script>
+  function handleContactSubmit(e) {
+    e.preventDefault();
+    const btn = document.getElementById('contactSubmitBtn');
+    const status = document.getElementById('contactFormStatus');
+    
+    btn.innerHTML = 'Submitting... <i data-lucide="loader" class="btn-icon"></i>';
+    btn.disabled = true;
+    btn.style.opacity = '0.7';
+    lucide.createIcons();
+    
+    // Simulate backend submission requirement
+    setTimeout(() => {
+      btn.innerHTML = 'Submit Request <i data-lucide="send" class="btn-icon"></i>';
+      btn.disabled = false;
+      btn.style.opacity = '1';
+      lucide.createIcons();
+      
+      status.style.display = 'block';
+      status.style.color = 'var(--color-brand-blue)';
+      status.innerText = 'Request submitted. Awaiting backend API integration for final processing.';
+      
+    }, 1500);
+  }
+</script>
+
+</body>
+</html>
